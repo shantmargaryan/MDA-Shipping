@@ -1,0 +1,160 @@
+.footer {
+	position: relative;
+	padding: 50px 0;
+	border-radius: 35px 35px 0px 0px;
+	background: #18162D;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background-color:#3579F4 ;
+	}
+
+	// .footer__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		@media(min-width:768px) {
+			align-items: start;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {
+		margin-bottom: 65px;
+		fill: #fff;
+
+		@media(min-width:768px) {
+			align-self: start;
+			margin: 0;
+		}
+	}
+
+	// .footer__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		@media(min-width:768px) {
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: space-between;
+		}
+	}
+
+	// .footer__list
+
+	&__list {
+		margin-bottom: 90px;
+		text-align: center;
+
+		@media(min-width:768px) {
+			margin: 0;
+		}
+	}
+
+	// .footer__item
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	// .footer__link
+
+	&__link {
+		background-color: transparent;
+	}
+
+	// .footer__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media(min-width:768px){
+			align-items: start;
+		}
+	}
+
+	// .footer__socials
+
+	&__socials {
+		margin-bottom: 35px;
+	}
+
+	// .footer__email
+
+	&__email {
+		margin-bottom: 20px;
+		color: #FFF;
+		font-size: 22px;
+		font-weight: 500;
+	}
+
+	// .footer__phone
+
+	&__phone {
+		margin-bottom: 20px;
+		text-decoration: none;
+		color: #FFF;
+		font-size: 22px;
+		font-weight: 500;
+	}
+
+	// .footer__address
+
+	&__address {
+		margin: 0;
+		margin-bottom: 100px;
+		color: #FFF;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 500;
+
+		@media(min-width:768px) {
+			max-width: 250px;
+			margin-bottom: 0;
+			text-align: start;
+		}
+	}
+
+	// .footer__copyright
+
+	&__copyright {
+		margin: 0;
+		color: rgba(255, 255, 255, 0.40);
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	// .socials__link
+
+
+	// .socials__icon
+
+	&__icon {
+		width: 40px;
+		height: 40px;
+	}
+}

@@ -1,0 +1,160 @@
+.contact {
+	position: relative;
+	padding: 100px 0;
+	border-radius: 35px 35px 0px 0px;
+	background: #3579F4;
+
+	// .contact__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		@media(min-width:992px) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	// .contact__form
+
+	&__form {
+		transition: opacity 1s, transform 1s;
+
+		&.scroll-anim {
+			opacity: 0;
+			transform: translateX(-10px);
+		}
+
+		&.scroll-anim_active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@media(min-width:992px) {
+			max-width: 400px;
+		}
+	}
+
+	// .contact__title
+
+	&__title {
+		margin-bottom: 20px;
+		color: #FFF;
+	}
+
+	// .contact__text
+
+	&__text {
+		margin-bottom: 35px;
+		color: rgba(255, 255, 255, 0.90);
+	}
+
+	// .contact__input
+
+	&__input {
+		width: 100%;
+		margin-bottom: 15px;
+		padding: 20px 0 20px 30px;
+		border-radius: 10px;
+		background-color: #5591FF;
+		color: #fff;
+		outline: none;
+
+		&::placeholder {
+			font-family: Inter;
+			font-size: 16px;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.90);
+		}
+
+		&:focus {
+			outline: 1px solid #fff;
+		}
+	}
+
+	// .contact__textarea
+
+	&__textarea {
+		width: 100%;
+		height: 100px;
+		margin-bottom: 30px;
+		padding-top: 20px;
+		padding-left: 30px;
+		border-radius: 10px;
+		background-color: #5591FF;
+		color: #fff;
+		resize: none;
+		border: none;
+		outline: none;
+
+		&::placeholder {
+			font-family: Inter;
+			font-size: 16px;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.90);
+		}
+
+		&:focus {
+			outline: 1px solid #fff;
+		}
+	}
+
+	// .contact__checkbox-wrapper
+
+	&__checkbox-wrapper {
+		margin-bottom: 37px;
+	}
+
+	// .contact__checkbox
+
+	&__checkbox {
+		margin-right: 20px;
+	}
+
+	// .contact__label
+
+	&__label {
+		color: rgba(255, 255, 255, 0.90);
+		font-weight: 400;
+	}
+
+	// .contact__link
+
+	&__link {
+		color: rgba(255, 255, 255, 0.90);
+		font-weight: 400;
+	}
+
+	// .contact__btn
+
+	&__btn {
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
+		border-radius: 10px;
+		background-color: #F0F0FA;
+	}
+
+	// .contact__img
+
+	&__img {
+		position: static;
+		transition: opacity 1s, transform 1s;
+
+		&.scroll-anim {
+			opacity: 0;
+		}
+
+		&.scroll-anim_active {
+			opacity: 1;
+		}
+
+		@media(min-width:992px) {
+			position: absolute;
+			right: 0;
+			max-width: 655px;
+		}
+	}
+}

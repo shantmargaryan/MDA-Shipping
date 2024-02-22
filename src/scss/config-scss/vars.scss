@@ -1,0 +1,19 @@
+:root {
+	// base
+	--font-family: "Inter";
+	--content-width: 1102px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// link
+	--link-color: #18162D;
+	--link-white-color: #fff;
+	--link-background-color: #3579F4;
+
+	// text
+	--text-color: #18162d;
+	--text-black-color: #000;
+	--text-rgba-color: rgba(24, 22, 45, 0.90);
+	--title-color: #18162D;
+	--title-blue-color: #3579F4;
+}
